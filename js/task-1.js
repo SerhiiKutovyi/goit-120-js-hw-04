@@ -252,15 +252,65 @@
 
 // console.log(key);
 
-const apartment = {
-  descr: 'Spacious apartment in the city center',
-  rating: 4,
-  price: 2153,
-};
+// const apartment = {
+//   // descr: 'Spacious apartment in the city center',
+//   // rating: 4,
+//   // price: 2153,
+// };
 
-const values = [];
-const keys = Object.keys(apartment);
+// const values = [];
+// const keys = Object.keys(apartment);
 
-for (const key of keys) {
-  values.push(apartment[key]);
+// for (const key of keys) {
+//   values.push(apartment[key]);
+// }
+
+// function countProps(object) {
+//   return Object.keys(object).length;
+// }
+
+// console.log(countProps({ name: 'Mango', age: 2 }));
+
+// console.log(Object.values(apartment));
+
+// const apartment = {
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+// const counts = Object.values(salaries);
+
+// for (const count of counts) {
+//   totalSalary += count;
+// }
+// return totalSalary;
+
+// for (const key in salaries) {
+//   totalSalary += salaries[key];
+// }
+// return totalSalary;
+// }
+
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+
+const colors = [
+  { hex: '#f44336', rgb: '244,67,54' },
+  { hex: '#2196f3', rgb: '33,150,243' },
+  { hex: '#4caf50', rgb: '76,175,80' },
+  { hex: '#ffeb3b', rgb: '255,235,59' },
+];
+
+const hexColors = [];
+const rgbColors = [];
+
+for (const color of colors) {
+  hexColors.push(color.hex);
+  rgbColors.push(color.rgb);
 }
+console.log(hexColors, rgbColors);
