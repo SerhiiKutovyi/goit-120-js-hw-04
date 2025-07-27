@@ -81,24 +81,80 @@
 
 // console.log(apartment);
 
-const apartment = {
-  imgUrl: 'https://via.placeholder.com/640x480',
-  descr: 'Spacious apartment in the city center',
-  rating: 4,
-  price: 2153,
-  tags: ['premium', 'promoted', 'top'],
-  owner: {
-    name: 'Henry',
-    phone: '982-126-1588',
-    email: 'henry.carter@aptmail.com',
-  },
+// const apartment = {
+//   imgUrl: 'https://via.placeholder.com/640x480',
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+//   tags: ['premium', 'promoted', 'top'],
+//   owner: {
+//     name: 'Henry',
+//     phone: '982-126-1588',
+//     email: 'henry.carter@aptmail.com',
+//   },
+// };
+
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// const lastTag = apartment.tags[apartment.tags.length - 1];
+
+// console.log(lastTag);
+
+// const book = {
+//   title: 'The Last Kingdom',
+//   author: 'Bernard Cornwell',
+//   genres: ['historical prose', 'adventure'],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+// console.log(book.title); // "The Last Kingdom"
+// console.log(book['title']); // "The Last Kingdom"
+
+// console.log(book.genres); // ["historical prose", "adventure"]
+// console.log(book['genres']); // ["historical prose", "adventure"]
+
+// const propKey = 'author';
+// console.log(book.propKey); // undefined
+// console.log(book[propKey]); // "Bernard Cornwell"
+
+// const apartment = {
+//   imgUrl: 'https://via.placeholder.com/640x480',
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+//   tags: ['premium', 'promoted', 'top'],
+//   owner: {
+//     name: 'Henry',
+//     phone: '982-126-1588',
+//     email: 'henry.carter@aptmail.com',
+//   },
+// };
+
+// apartment.price = 5000;
+// apartment.rating = 4.7;
+// apartment.owner.name = 'Henry Sibola';
+// apartment.tags.push('trusted');
+
+// console.log(apartment);
+
+const book = {
+  title: 'The Last Kingdom',
+  author: 'Bernard Cornwell',
+  genres: ['historical prose', 'adventure'],
+  isPublic: true,
+  rating: 8.38,
 };
 
-const ownerName = apartment.owner.name;
-const ownerPhone = apartment.owner.phone;
-const ownerEmail = apartment.owner.email;
-const numberOfTags = apartment.tags.length;
-const firstTag = apartment.tags[0];
-const lastTag = apartment.tags[apartment.tags.length - 1];
+book.pageCount = 836;
+book.originalLanguage = 'en';
+book.translations = ['ua', 'ru'];
+book.price = {
+  hardcover: 39,
+  softcover: 29,
+};
 
-console.log(lastTag);
+console.log(typeof book.translations);
