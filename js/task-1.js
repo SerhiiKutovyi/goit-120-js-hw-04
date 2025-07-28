@@ -299,18 +299,71 @@
 
 // console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
 
-const colors = [
-  { hex: '#f44336', rgb: '244,67,54' },
-  { hex: '#2196f3', rgb: '33,150,243' },
-  { hex: '#4caf50', rgb: '76,175,80' },
-  { hex: '#ffeb3b', rgb: '255,235,59' },
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+
+// for (const color of colors) {
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+// console.log(hexColors, rgbColors);
+
+// const books = [
+//   { title: 'The Last Kingdom', author: 'Bernard Cornwell' },
+//   { title: 'Beside Still Waters', author: 'Robert Sheckley' },
+//   { title: 'The Dream of a Ridiculous Man', author: 'Fyodor Dostoevsky' },
+// ];
+
+// const authorToSearchFor = 'Robert Sheckley';
+
+// for (const book of books) {
+//   if (book.author === authorToSearchFor) {
+//     console.log(book);
+//     console.log(book.title);
+//     console.log(book.rating);
+//   }
+// }
+
+// function getProductPrice(productName) {
+//   const products = [
+//     { name: 'Radar', price: 1300, quantity: 4 },
+//     { name: 'Scanner', price: 2700, quantity: 3 },
+//     { name: 'Droid', price: 400, quantity: 7 },
+//     { name: 'Grip', price: 1200, quantity: 9 },
+//   ];
+
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return product.price;
+//     }
+//   }
+//   return null;
+// }
+
+// console.log(getProductPrice('Droid'));
+// console.log(getProductPrice('Engine'));
+
+const books = [
+  { title: 'The Last Kingdom', author: 'Bernard Cornwell', rating: 8.2 },
+  { title: 'Beside Still Waters', author: 'Robert Sheckley', rating: 9 },
+  {
+    title: 'The Dream of a Ridiculous Man',
+    author: 'Fyodor Dostoevsky',
+    rating: 6.8,
+  },
 ];
 
-const hexColors = [];
-const rgbColors = [];
+const titles = [];
 
-for (const color of colors) {
-  hexColors.push(color.hex);
-  rgbColors.push(color.rgb);
+for (const book of books) {
+  titles.push(book.title);
 }
-console.log(hexColors, rgbColors);
+
+console.log(titles);
