@@ -478,3 +478,75 @@
 
 // console.log(add(32, 6, 13, 19, 8));
 // console.log(add(12, 4, 11, 48));
+
+// function addOverNum(value, ...args) {
+//   let total = 0;
+//   for (const element of args) {
+//     if (value < element) {
+//       total += element;
+//     }
+//   }
+//   return total;
+// }
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+
+// function getExtremeScores(scores) {
+//   const best = Math.max(...scores);
+//   const worst = Math.min(...scores);
+//   return { best, worst };
+// }
+
+// console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26]));
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+
+// const allScores = [
+//   ...firstGroupScores,
+//   ...secondGroupScores,
+//   ...thirdGroupScores,
+// ];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+// console.log(bestScore);
+// console.log(worstScore);
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15, propD: 20 };
+
+// const third = { ...first, ...second };
+// console.log(third);
+
+// const fourth = { ...second, ...first };
+// console.log(fourth);
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15 };
+
+// const third = { propB: 20, ...first, ...second };
+// console.log(third);
+
+// const fourth = { ...first, ...second, propB: 20 };
+// console.log(fourth);
+
+// const fifth = { ...first, propB: 20, ...second };
+// console.log(fifth);
+
+const defaultSettings = {
+  theme: 'light',
+  public: true,
+  withPassword: false,
+  minNumberOfQuestions: 10,
+  timePerQuestion: 60,
+};
+const overrideSettings = {
+  public: false,
+  withPassword: true,
+  timePerQuestion: 30,
+};
+
+const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+console.log(finalSettings);
