@@ -350,20 +350,60 @@
 // console.log(getProductPrice('Droid'));
 // console.log(getProductPrice('Engine'));
 
-const books = [
-  { title: 'The Last Kingdom', author: 'Bernard Cornwell', rating: 8.2 },
-  { title: 'Beside Still Waters', author: 'Robert Sheckley', rating: 9 },
-  {
-    title: 'The Dream of a Ridiculous Man',
-    author: 'Fyodor Dostoevsky',
-    rating: 6.8,
-  },
-];
+// const books = [
+//   { title: 'The Last Kingdom', author: 'Bernard Cornwell', rating: 8.2 },
+//   { title: 'Beside Still Waters', author: 'Robert Sheckley', rating: 9 },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 6.8,
+//   },
+// ];
 
-const titles = [];
+// const titles = [];
 
-for (const book of books) {
-  titles.push(book.title);
+// for (const book of books) {
+//   titles.push(book.title);
+// }
+
+// console.log(titles);
+
+// function getAllPropValues(propName) {
+//   const products = [
+//     { name: 'Radar', price: 1300, quantity: 4 },
+//     { name: 'Scanner', price: 2700, quantity: 3 },
+//     { name: 'Droid', price: 400, quantity: 7 },
+//     { name: 'Grip', price: 1200, quantity: 9 },
+//   ];
+
+//   const newArray = [];
+
+//   for (const product of products) {
+//     if (product[propName]) {
+//       newArray.push(product[propName]);
+//     }
+//   }
+//   return newArray;
+// }
+
+// console.log(getAllPropValues('quantity'));
+
+function calculateTotalPrice(productName) {
+  const products = [
+    { name: 'Radar', price: 1300, quantity: 4 },
+    { name: 'Scanner', price: 2700, quantity: 3 },
+    { name: 'Droid', price: 400, quantity: 7 },
+    { name: 'Grip', price: 1200, quantity: 9 },
+  ];
+
+  let total = 0;
+
+  for (const product of products) {
+    if (product.name === productName) {
+      return (total = `total: ${product.price * product.quantity}`);
+    }
+  }
+  return `Product ${productName} not found!`;
 }
 
-console.log(titles);
+console.log(calculateTotalPrice('Grip'));
