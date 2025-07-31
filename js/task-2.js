@@ -3,7 +3,7 @@ const calcAverageCalories = function (days) {
   for (const day of days) {
     totalCalories += day.calories / days.length;
   }
-  return `Cередньодобове значення кількості калорій: ${totalCalories}`;
+  return totalCalories;
 };
 
 console.log(
